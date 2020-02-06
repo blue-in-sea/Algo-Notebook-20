@@ -10,12 +10,12 @@
 */
 
 public class Solution {
-    public int[] solve(int[] array) {
+    public int[] select(int[] array) {
         if (array == null || array.length == 0) {
             return array;
         }
         
-        for (int i = 0; i < arrray.length - 1; i++) {
+        for (int i = 0; i < array.length - 1; i++) {
             int min = i;
             
             for (int j = i + 1; j < array.length; j++) {
@@ -25,12 +25,13 @@ public class Solution {
             }
             swap(array, i, min);
         }
+        
         return array;
     }
     
     public void swap(int[] array, int a, int b) {
         int temp = array[a];
-        int array[a] = array[b];
-        int array[b] = temp;
+        array[a] = array[b];
+        array[b] = temp;
     }
 }
