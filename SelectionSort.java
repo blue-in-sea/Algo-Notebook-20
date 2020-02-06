@@ -49,4 +49,5 @@ public class Solution {
  *    4.3 Quick sort (partition)
  * 5) Quick sort
  *    5.1 Array shuffling (与 quick sort 物理意义一致)
+ *    5.2 Rainbow sort (与 quick sort 物理意义一致) 两个指针 & 三个挡板
  */
