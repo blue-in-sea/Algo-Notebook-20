@@ -44,4 +44,6 @@ public class Solution {
  * 3) selection sort
  *    3.1 sort with 3 stacks 
  * 4) Merge sort
+ *    4.1 Merge sort ABCD1234 --> A1B2C3D4
+ *    4.2 Merge sort A1B2C3D4 --> ABCD1234
  */
