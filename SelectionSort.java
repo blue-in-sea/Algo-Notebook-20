@@ -46,4 +46,5 @@ public class Solution {
  * 4) Merge sort
  *    4.1 Merge sort ABCD1234 --> A1B2C3D4
  *    4.2 Merge sort A1B2C3D4 --> ABCD1234
+ *    4.3 Quick sort (partition)
  */
