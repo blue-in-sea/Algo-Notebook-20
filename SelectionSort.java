@@ -35,3 +35,13 @@ public class Solution {
         array[b] = temp;
     }
 }
+
+
+
+/* *
+ * 1) fib number
+ * 2) a to the power of b
+ * 3) selection sort
+ *    3.1 sort with 3 stacks 
+ * 4) Merge sort
+ */
