@@ -19,14 +19,22 @@ public class QuickSort {
     }
     
     public int partition(int[] array, int left, int right) {
-    
+        int pivotIndex = pivotIndex(left, right);
+        int pivot = array[pivotIndex];
+        // swap pivot to the rightmost pos
+        swap(array, pivotIndex, right);
+        
+        // swap pivot back to the correct pos
+        swap(array, lbound, right);
+        return lbound;
     }
     
-    public int pivotIndex() {
-    
+    public int pivotIndex(int left, int right) {
+        return left + (int) (Math.random() * (right - left + 1));
     }
 
-    public void swap() {
+    public void swap(int[] array, int left, int right) {
+        
     
     }
 }
