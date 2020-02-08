@@ -28,11 +28,7 @@ public class ClassicalBinarySearch {
         }
         
         return -1;
-    }
-    
-    public int binarySearch(int[] array, int target) {
-        
-   
+    }  
 }
         
 /**
@@ -46,7 +42,7 @@ public class ClassicalBinarySearch {
   
  
 /**
- * while (l < r - 1) { ... }
+ * while (l + 1 < r) { ... }
  *
  * 1 5 7 9 11 12  t : 2
  * L
