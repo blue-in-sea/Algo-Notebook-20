@@ -22,6 +22,7 @@ public class KClosestInSortedArray {
             if (r > array.length || l >= 0 && target - array[l] <= array[r] - target) {
                 res[i] = array[l++];
             } else {
+                // else if (r < array.length && (l < 0 || target - array[l] > array[r] - target))
                 res[i] = array[r--];
             }
         }
