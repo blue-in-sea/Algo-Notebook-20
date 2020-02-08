@@ -6,7 +6,7 @@
  * and you can return any of the indices i such that A[i] == T.
  */
 public class ClassicalBinarySearch {
-
+   
     public int binarySearch(int[] array, int target) {
         if (array == null || array.length == 0) {
             return -1;
@@ -30,7 +30,9 @@ public class ClassicalBinarySearch {
         return -1;
     }
     
-    public int binarySearch(
+    public int binarySearch(int[] array, int target) {
+        
+   
 }
         
 /**
@@ -41,3 +43,15 @@ public class ClassicalBinarySearch {
  * 4. target not found
  * . . .
  */
+  
+ 
+/**
+ * while (l < r - 1) { ... }
+ *
+ * 1 5 7 9 11 12  t : 2
+ * L
+ *   R
+ * M (死循环)
+ */
+    
+
