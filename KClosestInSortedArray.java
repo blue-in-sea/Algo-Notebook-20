@@ -31,6 +31,27 @@ public class KClosestInSortedArray {
     }
     
     public int helper(int[] array, int target) {
-    
+        int l = 0;
+        int r = array.length - 1;
+        
+        while (l < r - 1) {
+            int mid = l + (r - l) / 2;
+            if (array[mid] == target) {
+                return mid;
+            } else if (array[mid] < target) {
+                l = mid;
+            } else {
+                r = mid;
+            }
+        }
+        
+        if (array[r] <= target) {
+            return r;
+        }
+        if (array[l] <= target) {
+            return l;
+        }
+        
+        return -1;    
     }
 }
