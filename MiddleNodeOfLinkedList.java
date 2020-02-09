@@ -26,3 +26,6 @@ public class MiddleNodeOfLinkedList {
         return slow;
     }
 }
+
+// online algo vs. offline algo
+// online algo holds its benefit in big data context
