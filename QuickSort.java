@@ -38,7 +38,7 @@ public class QuickSort {
             } else {
                 swap(array, lbound++, rbound--);
             }
-            // 等于放在哪个判断条件里都没问题，因为 partition 把相同元素放在左边或者右边都可以)
+            // (等于放在哪个判断条件里都没问题，因为 partition 把相同元素放在左边或者右边都可以)
         }
         
         // swap pivot back to the correct pos
