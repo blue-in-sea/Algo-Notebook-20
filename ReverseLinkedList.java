@@ -32,7 +32,7 @@ public class ReverseLinkedList {
         ListNode newHead = reverse(head.next);
         head.next.next = head;
         head.next = null;
-        return newHead;          // newHead 一层层网上返回的时候其实是不变的：L32 只会 return 但是不会改值，每层独一只有 head 
+        return newHead;          // newHead 一层层网上返回的时候其实是不变的：L32 只会 return 的值都是固定 newHead
     }
 }
     
