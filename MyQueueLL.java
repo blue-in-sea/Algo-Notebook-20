@@ -9,7 +9,7 @@ class ListNode {
 public class MyQueueLL {
     private ListNode head;
     private ListNode tail;
-    // single linked-list, insert (offer) from tail, delete (poll) from head
+    // single Linked List, insert (offer) from tail, delete (poll) from head
     
     public MyQueueLL() {
         head = tail = null;
@@ -35,14 +35,37 @@ public class MyQueueLL {
     }
     
     public Integer peek() {
-        
+        if (head == null) {
+            return null;
+        }
+        return head.value;
     }
     
-    public void offer() {
-        
+    public void offer(Integer ele) {
+        if (head == null) {
+            // initial a new queue
+            head = new ListNode(ele);
+            tail = head;
+        } else {
+            // insert or offer at the tail of the Linked List
+            tail.next = new ListNode(ele);
+            tail = tail.next;
+        }
     }
     
     public static void main(Strings args) {
+        MyQueueLL queue = MyQueueLL();
         
+        queue.offer(4);
+        queue.offer(5);
+        queue.offer(6);
+        
+        while (!queue.isEmpty()) {
+            System.out.println(queue.peek());
+            System.out.println(queue.poll());
+        }
+        
+        System.out.println(queue.peek());
+        System.out.println(queue.poll());
     }
 }
