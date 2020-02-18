@@ -1,0 +1,24 @@
+Heap & Graph Search Algo (BFS I & II)
+
+Properties of Heap:
+  1. Complete Binary Tree
+  2. Descendent (MIN or MAX)
+  
+ Heap Implemented as an unsortd array
+  1. index of leftChild = myIndex * 2 + 1
+  2. index of rightChild = myIndex * 2 + 2
+  3. index of parent = (myIndex - 1) / 2
+  
+  Operations
+    1. insert a new ele into heap [percolateUp] => O(logn): insert below a leave nodes, then heapify
+    2. update an ele while maintaining the property of the heap => O(logn)
+    3. get / top : check the top ele of the heap => O(1)
+    4. pop : delete the top ele of the heap => O(logn)
+    5. heapify : convert an unsorted array into a heap => O(n) ***
+    
+   Q1. Find smallest K elements from an unsorted array of size n
+   Q2. Print a binary tree by level-order (BFS)
+   Q3. Bipartite 
+   Q4. Check if is a complete binary tree (BFS + Flag)
+   Q5. Shortest 
+  
