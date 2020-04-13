@@ -1,14 +1,3 @@
-/* *
- * CART
- * APIs: add()    --- Time = O(1), 
- *       remove() --- Time = O(n), Amortized time = O(1)
- *       
- * queue <--  1 2 3 4     5 6 7 8  <-- 
- *
- * stack1 [  
- * stack2 [
- **/
-
 public class QueueByTwoStacks {
   private Deque<Integer> s1;  // in
   private Deque<Integer> s2;  // out
@@ -48,3 +37,14 @@ public class QueueByTwoStacks {
     }
   }
 }
+
+/* *
+ * CART
+ * APIs: add()    --- Time = O(1), 
+ *       remove() --- Time = O(n), Amortized time = O(1)
+ *       
+ * queue <--  1 2 3 4     5 6 7 8  <-- 
+ *
+ * stack1 [  
+ * stack2 [
+ **/
