@@ -2,9 +2,9 @@ public class QueueByTwoStacks {
   private Deque<Integer> s1;  // in
   private Deque<Integer> s2;  // out
 
-  public Solution() {
-    s1 = new LinkedList<>();
-    s2 = new LinkedList<>();
+  public QueueByTwoStacks() {
+    s1 = new ArrayDeque<>();
+    s2 = new ArrayDeque<>();
   }
   
   public Integer poll() {
@@ -45,6 +45,9 @@ public class QueueByTwoStacks {
  *       
  * queue <--  1 2 3 4     5 6 7 8  <-- 
  *
+ * stack1 [ 1 2 3 4 (s1.offer())
+ * stack2 [ 
+ *
  * stack1 [  
- * stack2 [
+ * stack2 [ 4 3 2 1 (s2.peek && s2.pop())
  **/
