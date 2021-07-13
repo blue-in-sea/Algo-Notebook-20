@@ -44,10 +44,6 @@
             if (node.right != null) {
                 q.offer(new tuple(node.right, curVal * 10 + node.right.val));
             }
-
-            //System.out.println("++++");
-            //System.out.println(node.val);
-
         }
 
         return sum;
